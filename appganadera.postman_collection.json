@@ -1,0 +1,889 @@
+{
+	"info": {
+		"_postman_id": "b151626b-d3c1-449d-a935-8c201de2d376",
+		"name": "appganadera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37986118"
+	},
+	"item": [
+		{
+			"name": "hierros",
+			"item": [
+				{
+					"name": "consultarHierros",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/hierros",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"hierros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearHierro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"material\": \"cobre\",\r\n    \"marcado\": \"v\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/hierros",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"hierros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultarHierroPorID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/hierros/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"hierros",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarHierroPorID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"material\": \"cobre\",\r\n    \"marcado\": \"ganado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/hierros/65",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"hierros",
+								"65"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarHierroPorID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/hierros/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"hierros",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "fincas",
+			"item": [
+				{
+					"name": "consultarFincas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/fincas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"fincas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearFinca",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Las Marias\",\r\n    \"ubicacion\": \"Guarne\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/fincas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"fincas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultarFincaPorID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/fincas/13",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"fincas",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarFincaPorID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Las Marias\",\r\n    \"ubicacion\": \"Copacabana\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/fincas/13",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"fincas",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarFincaPorID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/fincas/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"fincas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarUsuarioPorFinca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/fincas/4/usuarios",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"fincas",
+								"4",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "incidentes",
+			"item": [
+				{
+					"name": "consultarIncidentes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/incidentes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"incidentes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearIncidente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo\": 3,\r\n    \"descripcion\": \"se murió una vaca por intoxicación\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/incidentes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"incidentes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultarIncidentePorID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/incidentes/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"incidentes",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarIncidentesPorID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo\": 3,\r\n    \"descripcion\": \"se murió una vaca porque se rodó\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/incidentes/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"incidentes",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarIncidentePorID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/incidentes/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"incidentes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ganados",
+			"item": [
+				{
+					"name": "consultarGanados",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/ganados",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"ganados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearGanado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sexo\": true,\r\n    \"raza\": \"Arshay\",\r\n    \"proposito\": 1,\r\n    \"tipo\": 1,\r\n    \"foto\": \"sfjdfodifdjfdkfjdk\",\r\n    \"finca_id\": 2,\r\n    \"hierro_id\": 2   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/ganados",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"ganados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultarGanadoPorID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/ganados/21",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"ganados",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarGanadosPorID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sexo\": true,\r\n    \"raza\": \"Arshay\",\r\n    \"proposito\": 1,\r\n    \"tipo\": 1,\r\n    \"foto\": \"sfjdfodifdjfdfdfjdk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/ganados/21",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"ganados",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarGanadoPorID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/ganados/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"ganados",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "usuarios",
+			"item": [
+				{
+					"name": "consultarUsuarios",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/usuarios",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearUsuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre_usuario\": \"catalina-londono\",\r\n    \"password\": \"catalina-londono\",\r\n    \"rol\": true,\r\n    \"nombre\": \"Catalina\",\r\n    \"apellido\": \"Londoño\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/usuarios",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultarUsuarioPorID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/usuarios/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarUsuarioPorID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre_usuario\": \"catalina-londono\",\r\n    \"password\": \"catalina-londono2\",\r\n    \"rol\": 0,\r\n    \"nombre\": \"Catalina\",\r\n    \"apellido\": \"Londoño\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/usuarios/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarUsuarioPorID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/usuarios/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarFincaporUsuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/usuarios/6/fincas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"6",
+								"fincas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AsignarUsuarioAFinca",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario_id\": \"6\",\r\n    \"finca_id\": \"9\"\r\n           \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/usuarios/asignarafinca",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"asignarafinca"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarUsuarioDeFinca",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario_id\": \"6\",\r\n    \"finca_id\": \"9\"\r\n           \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/eliminar-usuario-de-finca",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"eliminar-usuario-de-finca"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
