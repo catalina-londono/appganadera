@@ -5,7 +5,6 @@ use App\Http\Controllers\GanadoController;
 use App\Http\Controllers\HierroController;
 use App\Http\Controllers\IncidenteController;
 use App\Http\Controllers\UsuarioController;
-use App\Models\Ganado;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -34,3 +33,8 @@ Route::get('v1/usuarios/{id}/fincas', [UsuarioController::class, 'ConsultarFinca
 Route::post('v1/usuarios/asignarafinca', [UsuarioController::class, 'AsignarUsuarioAFinca']);
 Route::delete('v1/eliminar-usuario-de-finca', [UsuarioController::class, 'eliminarUsuarioDeFinca']);
 Route::get('v1/fincas/{id}/usuarios', [FincaController::class, 'ConsultarUsuarioPorFinca']);
+
+Route::get('v1/incidentes/{id}/ganados', [IncidenteController::class, 'ConsultarGanadoporIncidente']);
+Route::post('v1/incidentes/asignaraganado', [IncidenteController::class, 'AsignarIncidenteAGanado']);
+Route::delete('v1/eliminar-incidente-de-ganado', [IncidenteController::class, 'eliminarIncidenteDeGanado']);
+Route::get('v1/ganados/{id}/incidentes', [GanadoController::class, 'ConsultarIncidentePorGanado']);

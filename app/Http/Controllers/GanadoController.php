@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ganado;
+use App\Traits\ApiResponse2;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 class GanadoController extends Controller
 {
+    use ApiResponse2;
     /**
      * Display a listing of the resource.
      */
@@ -145,4 +147,17 @@ class GanadoController extends Controller
             );
         }
     }
+    public function ConsultarIncidentePorGanado($id)
+    { // para mirar qué incidentes están asignados a cada ganado
+
+        $ganado = Ganado::find($id);
+
+        if (!$ganado) {
+            return $this->errorResponse('Ganado no encontrado', 404);
+        }
+        $incidentes = $ganado->incidentes;
+
+        return $this->successResponse($incidentes, 'Incidentes asignados a cada ganado');
+    }
 }
+

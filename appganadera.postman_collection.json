@@ -485,6 +485,99 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "ConsultarGanadoporIncidente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/incidentes/4/ganados",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"incidentes",
+								"4",
+								"ganados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AsignarIncidenteAGanado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"incidente_id\": \"5\",\r\n    \"ganado_id\": \"21\"\r\n           \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/incidentes/asignaraganado",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"incidentes",
+								"asignaraganado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarIncidenteDeGanado",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"incidente_id\": \"5\",\r\n    \"ganado_id\": \"21\"\r\n           \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/eliminar-incidente-de-ganado",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"eliminar-incidente-de-ganado"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -633,6 +726,32 @@
 								"v1",
 								"ganados",
 								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarIncidentePorGanado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/ganados/14/incidentes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"ganados",
+								"14",
+								"incidentes"
 							]
 						}
 					},
