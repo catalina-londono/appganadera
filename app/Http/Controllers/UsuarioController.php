@@ -7,6 +7,7 @@ use App\Models\Usuario;
 use App\Traits\ApiResponse2;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class UsuarioController extends Controller
@@ -239,4 +240,34 @@ class UsuarioController extends Controller
         ];
         return  $this->successResponse($data, 'Usuario eliminado de la finca con exito');
     }
+    public function Login(Request $request)
+{
+    // Validar las credenciales recibidas del request
+    $credentials = $request->only('nombre_usuario', 'password');
+
+    // Intentar autenticarse con las credenciales
+    if (Auth::attempt($credentials)) {
+        // Obtener el usuario autenticado
+        $usuario = Auth::user(); // Utiliza 'user()' en lugar de 'Usuario()'
+
+        // Puedes generar un token JWT o devolver una respuesta exitosa
+        return response()->json([
+            'status' => Response::HTTP_OK,
+            'message' => 'Inicio de sesión exitoso.',
+            'usuario' => [
+                'id' => $usuario->id,
+                'nombre_usuario' => $usuario->nombre_usuario,
+                'nombre' => $usuario->nombre,
+                'apellido' => $usuario->apellido,
+                'rol' => $usuario->rol,
+            ]  // Asegúrate de usar 'usuario' con minúscula
+        ], Response::HTTP_OK);
+    } else {
+        // Si las credenciales no son correctas
+        return response()->json([
+            'status' => Response::HTTP_UNAUTHORIZED,
+            'message' => 'Credenciales incorrectas. Intente de nuevo.'
+        ], Response::HTTP_UNAUTHORIZED);
+    }
+}
 }

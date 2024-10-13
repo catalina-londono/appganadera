@@ -33,6 +33,7 @@ Route::get('v1/usuarios/{id}/fincas', [UsuarioController::class, 'ConsultarFinca
 Route::post('v1/usuarios/asignarafinca', [UsuarioController::class, 'AsignarUsuarioAFinca']);
 Route::delete('v1/eliminar-usuario-de-finca', [UsuarioController::class, 'eliminarUsuarioDeFinca']);
 Route::get('v1/fincas/{id}/usuarios', [FincaController::class, 'ConsultarUsuarioPorFinca']);
+Route::post('v1/login', [UsuarioController::class, 'Login']);
 
 Route::get('v1/incidentes/{id}/ganados', [IncidenteController::class, 'ConsultarGanadoporIncidente']);
 Route::post('v1/incidentes/asignaraganado', [IncidenteController::class, 'AsignarIncidenteAGanado']);

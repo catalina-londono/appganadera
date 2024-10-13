@@ -79,6 +79,8 @@ class GanadoController extends Controller
             $existe->proposito = $request->proposito;
             $existe->tipo = $request->tipo;
             $existe->foto = $request->foto;
+            $existe->finca_id = $request->finca_id;
+            $existe->hierro_id = $request->hierro_id;
             if ($existe->save()) {
                 return response()->json(
                     [
